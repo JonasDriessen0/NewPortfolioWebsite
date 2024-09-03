@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">JD</div>
+                <div class="nav-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <div class="container">
+            <h1 class="project-title">Generic Tower Defense</h1>
+            <p class="project-subtitle">A simple tower defense game</p>
+
+            <div class="gallery-and-video">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/TDCover.png" alt="Hollow Reverie Image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot2.png" alt="Hollow Reverie Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot3.png" alt="Hollow Reverie Image 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot4.png" alt="Hollow Reverie Image 4">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project-description">
+                <h2>Introduction to the project</h2>
+                <p>Generic Tower Defense is a project which I made for a school assignment to create a tower defense game. GenericTD focuses on having a clean and simple art style while still being fun and enjoyable to play. I learned a lot during the development of this project about not only how to make better code but also how to use Git more efficiently.</p>
+
+                <h2>Gameplay</h2>
+                <p>The gameplay consists of you having to stop ever-increasing waves of enemies from getting to your "Base". You can defend against the incoming enemies by buying and placing turrets along the path to your base.</p>
+
+                <h2>Buying Turrets</h2>
+                <p>You can buy turrets with a currency you get from killing enemies, which is called "Metal".</p>
+                <img src="img/TDvisualsheet.png" alt="tower defense visual sheet" class="project-image">
+                <p>There are currently 2 different turrets you can buy.</p>
+
+                <h2>Turret Placing</h2>
+                <p>When you buy a turret, you go into placing mode, where a place icon will be following your mouse location along a grid, and when you click, you put down the turret on the grid where you clicked.</p>
+                <img src="img/Unity_nlw5cgkwex.gif" alt="turret placing gif" class="project-image">
+                <p>Set the variable "mousePosition" as the position of the mouse.</p>
+                <img src="img/movetomouse.png" alt="mouse code" class="project-image">
+                <p>Move the place indicator along the grid smoothly with the help of the DotTween extension.</p>
+                <img src="img/movealonggrid.png" alt="grid code" class="project-image">
+                <p>Place the turret when you click the left mouse button.</p>
+                <img src="img/placeturret.png" alt="place turret" class="project-image">
+                <h2>Outcome</h2>
+                <p>While developing this project, I learned a lot of new skills in and outside of Unity, and I am very pleased with the end result.</p>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/JonasDriessen0/TowerDefenseJonas/tree/develop" class="cta-button" target="_blank">View on GitHub</a>
+                <a href="https://github.com/JonasDriessen0/TowerDefenseJonas/releases/tag/0.0.2" class="cta-button" target="_blank">Download</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="location">
+                AMST, NETHERLANDS - <span id="current-time"></span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jonas-driessen-457907294/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JonasDriessen0" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://joons.itch.io/" target="_blank" class="social-icon"><i class="fab fa-itch-io"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

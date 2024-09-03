@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Reverie - Jonas Driessen</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">JD</div>
+                <div class="nav-links">
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <div class="container">
+            <h1 class="project-title">Hollow Reverie</h1>
+            <p class="project-subtitle">A Short Linear Horror Game</p>
+
+            <div class="gallery-and-video">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot1.png" alt="Hollow Reverie Image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot2.png" alt="Hollow Reverie Image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot3.png" alt="Hollow Reverie Image 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/hrscreenshot4.png" alt="Hollow Reverie Image 4">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project-description">
+                <h2>About the Project</h2>
+                <p>Hollow Reverie is a short linear horror game made for the <a href="https://itch.io/jam/goedware-game-jam-zero-ui" target="_blank" >Goedware Zero UI Game jam</a>. It takes place
+                in an abandoned warehouse of some sort where you have a tablet that displays usefull information and features a sonar and a flash ability to help you along your way.
+                You are also being hunted by an unkown creature that has no sight but has amazing hearing so you need to be carefull and quiet in an attempt to survive. 
+                I learned a lot of new unity skills throughout this project but i also learned a lot of game design skills while designing the levels.</p> 
+
+                <h2>The Monster</h2>
+                <p>I thought id get right into what the most challenging part of this project was: <b>The Monster</b>.</p>
+                <img src="img/hrmonster.png" alt="the monster">
+                <p>The monster has the appearence of a smoke cloud i chose this because i didnt think that i wouldve been able to make a scary fully animated monster
+                in the limited timeframe i before the game jam submissions would end, so i chose this as the player cant really fully figure out
+                what it is and the most prominent fear any human has is the fear of the unkown so i think it works pretty well!</p>
+                <p>It also definetly helps that the monster makes a terrifying noise when youre near it, see for yourself:</p>
+                <video width="800px" height="460px" controls="controls">
+                    <source src="img/hrvideo.mp4" type="video/mp4" />
+                </video>
+                <h2>Monster Behavior</h2>
+                <p>To start off, the main way in which the monster behaves is down to either one of these states; Wandering or Hunting.</p>
+                <img src="img/hrcode1.png" alt="state code">
+                <p>Lets start off with how the wandering state works.</p>
+                <p>The wandering state is pretty simple, every 5 seconds (time determined by the wanderTimer variable) it picks a random spot on the navmesh within
+                    the wanderRadius to and then goes to it.
+                </p>
+                <img src="img/hrcode2.png" alt="wandering code">
+                <img src="img/hrcode3.png" alt="wandering code">
+                <p>Lets get into how the monster switches from wandering to hunting.</p>
+                <p>As i mentioned before the monster is blind so it reacts purely to sound. To achieve that i first find all audiosource elements in the scene
+                    then i determine the loudest and closest sound within range then at last the monster starts heading towards the previously determined audiosource and
+                    adjust the monsters speed based on the audiosources volume and distance from the monster.
+                </p>
+                <img src="img/hrcode4.png" alt="sound detection code">
+                <p>The Hunting state is activated in the <b>DetectSounds</b> function and when activated the <b>Hunt</b> function makes sure to switch back to wandering when it is finished hunting.</p>
+                <img src="img/hrcode5.png" alt="hunt code">
+                <h2>Outcome</h2>
+                <p>Making Hollow Reverie learned me a bunch of new usefull skills both in unity, game design and coding. Im very pleased with the end result and if you wondered where i ranked amongst
+                    other games in the game jam here are my results!
+                </p>
+                <img src="img/hrresults.png" alt="jam results">
+                <p>Im very proud of how highly rated my game was, 9th place out of a total of 70 games in visuals and audio is super cool!</p>
+            </div>
+
+            <div class="project-links">
+                <a href="#" class="cta-button">Play Now</a>
+                <a href="#" class="cta-button">View on GitHub</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="location">AMST, NETHERLANDS - <span id="current-time"></span></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jonas-driessen-457907294/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JonasDriessen0" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://joons.itch.io/" target="_blank" class="social-icon"><i class="fab fa-itch-io"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
