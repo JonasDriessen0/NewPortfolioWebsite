@@ -133,62 +133,87 @@ nav {
 .projects-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 50px;
     position: relative;
-    width: 100%;
     background: #0f0f11;
     border: 2px solid #8c8c8e;
-    
     border-radius: 20px;
     padding: 10px 20px;
-  }
-  
-  .projects-header h2 {
+}
+
+.projects-header h2 {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     font-size: 36px;
     color: #fff;
     text-align: center;
-    justify-content: center;
-    flex-grow: 1;
 }
-  
-  .header-icon {
+
+.header-icon {
     width: 40px;
-    height: 40px;
+    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-  }
-  
-  .header-icon svg {
-    width: 40px;
-    height: 40px;
-    color: #8c8c8e;
-  }
+    position: relative;
+}
 
-/* Responsive adjustments */
+.header-icon::before,
+.header-icon::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    width: 1px;
+    background-color: #8c8c8e;
+}
+
+.header-icon::before {
+    left: -10px;
+}
+
+.header-icon::after {
+    right: -10px;
+}
+
+.header-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #8c8c8e;
+}
+
 @media (max-width: 768px) {
     .projects-header h2 {
-        font-size: 28px;
-        padding: 10px 20px;
-    }
-
-    .projects-header::after {
-        width: 240px;
+        font-size: 24px;
+        padding: 0 10px;
     }
 
     .header-icon {
-        width: 32px;
-        height: 32px;
-        margin: 0 10px;
+        width: 30px;
+        height: 30px;
     }
 
     .header-icon svg {
         width: 18px;
         height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-header h2 {
+        font-size: 20px;
+    }
+
+    .header-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-icon svg {
+        width: 14px;
+        height: 14px;
     }
 }
 
