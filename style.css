@@ -133,13 +133,14 @@ nav {
 .projects-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* This spreads out the child elements */
     margin-bottom: 50px;
     position: relative;
     background: #0f0f11;
     border: 2px solid #8c8c8e;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 20px; /* Remove horizontal padding */
+    overflow: hidden; /* This ensures the icons don't overflow the rounded corners */
 }
 
 .projects-header h2 {
@@ -148,40 +149,37 @@ nav {
     font-size: 36px;
     color: #fff;
     text-align: center;
+    flex-grow: 1; /* This allows the title to take up the remaining space */
 }
 
 .header-icon {
-    width: 40px;
+    width: 56px;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     position: relative;
+    overflow: hidden;
 }
 
+.left-icon {
+    margin-left: -2px; /* Slightly overlaps the left border */
+}
+
+.right-icon {
+    margin-right: -2px; /* Slightly overlaps the right border */
+}
+
+.header-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Remove the pseudo-elements as they're no longer needed */
 .header-icon::before,
 .header-icon::after {
-    content: '';
-    position: absolute;
-    top: -10px;
-    bottom: -10px;
-    width: 1px;
-    background-color: #8c8c8e;
-}
-
-.header-icon::before {
-    left: -10px;
-}
-
-.header-icon::after {
-    right: -10px;
-}
-
-.header-icon svg {
-    width: 24px;
-    height: 24px;
-    color: #8c8c8e;
+    content: none;
 }
 
 @media (max-width: 768px) {

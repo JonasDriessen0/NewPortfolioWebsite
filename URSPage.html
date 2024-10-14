@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unnamed Retro Shooter</title>
+    <link rel="icon" type="image/x-icon" href="img/JDiconSmall.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">JD</div>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="About-me.html">About me</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="project-page">
+        <div class="container">
+            <h1 class="project-title">Unnamed Retro Shooter</h1>
+            <p class="project-subtitle">An Experimental FPS Project</p>
+
+            <div class="gallery-and-video">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/dashorb.png" alt="Dash Orb">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Unity_GVdA4NCWrj.gif" alt="Dash Orb Targeting">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Unity_D49IQITLfy.gif" alt="Dash Orb Usage">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/Unity_Y5T2QFbGOD.gif" alt="Chaining Dash Orbs">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="project-video">
+                    <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="project-description">
+                <h2>About the Project</h2>
+                <p>Unnamed Retro Shooter is an experimental first-person shooter project that builds upon the mechanics of our previous Ultrakill project. This game is currently in its early prototyping stage, focusing on unique movement and shooting mechanics.</p>
+
+                <h2>Key Features</h2>
+                <h3>Dash Orbs</h3>
+                <p>One of the standout features of this game is the innovative Dash Orb system:</p>
+                <ul>
+                    <li>Dash Orbs are special objects in the game world that players can interact with.</li>
+                    <li>When looking at a Dash Orb, it's targeted with a visual indicator.</li>
+                    <li>Players can dash towards the orb by pressing the "E" key.</li>
+                    <li>Dash Orbs can be chained together, allowing for fast and dynamic movement across the game world.</li>
+                </ul>
+
+                <h2>Development Process</h2>
+                <p>The targeting system for Dash Orbs uses a spherecast to detect objects with the correct tag. When a valid target is found, it activates the target indicator.</p>
+
+                <div class="code-sample">
+                    <img src="img/imageMORECODE.png" alt="Dash Orb Code Sample" class="code-image">
+                </div>
+
+                <h2>Future Plans</h2>
+                <p>While the game is still in early development, we have exciting plans for its future. We're continuously working on expanding the gameplay mechanics, level design, and overall player experience.</p>
+            </div>
+
+            <div class="project-links">
+                <a href="#" class="cta-button">Play Demo</a>
+                <a href="https://github.com/JonasDriessen0/MegaMurder" class="cta-button">View on GitHub</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="location">AMST, NETHERLANDS - <span id="current-time"></span></div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jonas-driessen-457907294/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/JonasDriessen0" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://joons.itch.io/" target="_blank" class="social-icon"><i class="fab fa-itch-io"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
