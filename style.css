@@ -248,10 +248,10 @@ nav {
     border: 1px solid #8c8c8e;
     display: flex;
     flex-direction: column;
-    text-decoration: none; /* Remove default link underline */
-    color: inherit; /* Inherit text color from parent */
+    text-decoration: none;
+    color: inherit;
+    position: relative;
 }
-
 
 .project-card:hover {
     transform: translateY(-10px);
@@ -262,7 +262,7 @@ nav {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease; /* Smooth transition for image */
+    transition: transform 0.3s ease;
 }
 
 .project-card:hover img {
@@ -288,7 +288,6 @@ nav {
     flex-grow: 1;
 }
 
-
 .project-tags {
     margin-top: auto;
 }
@@ -309,6 +308,65 @@ nav {
     background: #fff;
 }
 
+/* Styles for disabled project card */
+.project-card.disabled {
+    position: relative;
+    pointer-events: auto;
+    cursor: default;
+}
+
+.project-card.disabled .card-content {
+    filter: blur(1.7px);
+}
+
+.project-card.disabled img {
+    filter: grayscale(100%) blur(2px);
+}
+
+.project-card.disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.disabled-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 17, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project-card.disabled:hover .disabled-overlay {
+    opacity: 1;
+}
+
+.disabled-overlay p {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    max-width: 80%;
+}
+
+/* Responsive design for project grid */
+@media (max-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* Footer */
 footer {
     background-color: #0f0f11;

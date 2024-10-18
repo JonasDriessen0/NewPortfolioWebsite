@@ -2,11 +2,12 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 0 60px; /* Adjust the bottom padding to make space for the footer */
     background-color: #0f0f11;
     position: relative;
     overflow: hidden;
 }
+
 
 .about-me-section::before {
     content: '';
@@ -110,5 +111,57 @@
         flex: 0 0 auto;
         max-width: 250px;
         margin: 0 auto 30px;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #0f0f11;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #8c8c8e;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.location {
+    font-size: 14px;
+    color: #8c8c8e;
+}
+
+.social-links a {
+    color: #8c8c8e;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
     }
 }
