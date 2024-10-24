@@ -38,3 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
         effect: 'fade', // Optional: You can use different effects like 'slide', 'fade', etc.
     });
 });
+
+document.getElementById('discord-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    const discordUsername = 'travis_scotland'; // Replace with your actual Discord username
+    navigator.clipboard.writeText(discordUsername).then(() => {
+        alert('Discord username copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+});

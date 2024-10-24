@@ -8,7 +8,6 @@
     overflow: hidden;
 }
 
-
 .about-me-section::before {
     content: '';
     position: absolute;
@@ -31,8 +30,16 @@
     z-index: 1;
 }
 
-.profile-image {
+.profile-section {
     flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 100%;
 }
 
 .profile-image img {
@@ -40,6 +47,38 @@
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(140, 140, 142, 0.3);
+}
+
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: #1a1a1d;
+    border: 1px solid #8c8c8e;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    gap: 10px;
+}
+
+.social-button:hover {
+    background-color: #8c8c8e;
+    color: #0f0f11;
+    transform: translateY(-2px);
+}
+
+.social-button i {
+    font-size: 20px;
 }
 
 .about-me-text {
@@ -102,18 +141,6 @@
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .about-me-content {
-        flex-direction: column-reverse; /* Stack elements vertically on mobile, image on top */
-    }
-
-    .profile-image {
-        flex: 0 0 auto;
-        max-width: 250px;
-        margin: 0 auto 30px;
-    }
-}
-
 /* Footer styles */
 footer {
     background-color: #0f0f11;
@@ -146,7 +173,18 @@ footer .container {
     color: #fff;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    .about-me-content {
+        flex-direction: column-reverse; /* Stack elements vertically on mobile, image on top */
+    }
+
+    .profile-section {
+        flex: 0 0 auto;
+        max-width: 250px;
+        margin: 0 auto 30px;
+    }
+
     footer .container {
         flex-direction: column;
         align-items: center;
@@ -163,5 +201,14 @@ footer .container {
 
     .social-links a {
         margin: 0 10px;
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
     }
 }
