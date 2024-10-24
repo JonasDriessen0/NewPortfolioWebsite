@@ -18,7 +18,7 @@
     background-color: #0f0f11;
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10%);
     background-size: 20px 20px;
-    animation: moveBackground 20s linear infinite;
+    animation: moveBackground 37s linear infinite;
     z-index: 0;
 }
 
@@ -47,6 +47,36 @@
     height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(140, 140, 142, 0.3);
+}
+
+.email-copy-container {
+    display: flex;
+    width: 100%; /* Make the container the same width as other buttons */
+}
+
+.email-button {
+    flex-grow: 1; /* This allows the email button to take up the remaining space */
+    margin-right: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.copy-button {
+    width: 50px; /* Small square button */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1d;
+    border: 1px solid #8c8c8e;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    background-color: #8c8c8e;
+    color: #0f0f11;
+    transform: translateY(-2px);
 }
 
 .social-buttons {
@@ -209,6 +239,6 @@ footer .container {
         background-position: 0 0;
     }
     100% {
-        background-position: 50px 50px;
+        background-position: 100% 0;
     }
 }

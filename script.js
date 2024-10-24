@@ -48,3 +48,12 @@ document.getElementById('discord-button').addEventListener('click', function (e)
         console.error('Failed to copy: ', err);
     });
 });
+
+document.getElementById('copy-email-button').addEventListener('click', function () {
+    const email = 'joonsyt@gmail.com'; // Replace with your actual email
+    navigator.clipboard.writeText(email).then(() => {
+        alert('Email address copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+});
