@@ -133,14 +133,32 @@ nav {
 .projects-header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* This spreads out the child elements */
+    justify-content: space-between;
     margin-bottom: 50px;
     position: relative;
     background: #0f0f11;
-    border: 2px solid #8c8c8e;
-    border-radius: 20px;
-    padding: 10px 20px; /* Remove horizontal padding */
-    overflow: hidden; /* This ensures the icons don't overflow the rounded corners */
+    border: 1.5px solid #8c8c8e;
+    border-radius: 14px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.projects-header::before,
+.projects-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1.5px; /* Thickness of the lines */
+    background-color: #8c8c8e; /* Line color */
+}
+
+.projects-header::before {
+    left: 70px; /* Adjust to position between the left icon and title */
+}
+
+.projects-header::after {
+    right: 70px; /* Adjust to position between the title and right icon */
 }
 
 .projects-header h2 {
@@ -213,6 +231,14 @@ nav {
         width: 14px;
         height: 14px;
     }
+}
+
+.custom-icon {
+    width: 18px !important; /* Adjust to match your Font Awesome icons */
+    height: 18px !important; /* Maintains aspect ratio */
+    vertical-align: middle; /* Aligns with text */
+    margin-top: -2px; /* Fine-tune vertical alignment if needed */
+    display: inline-block;
 }
 
 .projects {
