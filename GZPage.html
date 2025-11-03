@@ -27,88 +27,148 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">Ground Zero</h1>
-            <p class="project-subtitle">A difficult first person shooter game</p>
+            <!-- Enhanced Header Section -->
+            <div class="project-header ground-zero">
+                <h1 class="project-title">Ground Zero</h1>
+                <p class="project-subtitle">A difficult first person shooter game</p>
+            </div>
 
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/GZscreenshot1.png" alt="Hollow Reverie Image 1">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/GZscreenshot1.png" alt="Ground Zero Screenshot 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/GZscreenshot2.png" alt="Ground Zero Screenshot 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/GZscreenshot3.png" alt="Ground Zero Screenshot 3">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/GZscreenshot2.png" alt="Hollow Reverie Image 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/GZscreenshot3.png" alt="Hollow Reverie Image 3">
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/u_PygW2rOUM" frameborder="0" allowfullscreen></iframe>
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/u_PygW2rOUM" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-description">
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>About the Project</h2>
-                <p>Ground Zero is a short, fast-paced shooter game inspired by old shooters like Quake and was made within 9 days for the
-                <a href="https://itch.io/jam/hyper-unicorn-gamejam-final-chapter" target="_blank">Hyper Unicorn Game Jam</a>.
-                 This project taught me many new things that I previously didn't know and helped me better understand how other games did certain things, such as 
-                 creating cool environments and making them work well with the type of game I’m making, among many other things.
+                <p>
+                    Ground Zero is a short, fast-paced shooter game inspired by old shooters like Quake and was made within 9 days for the
+                    <a href="https://itch.io/jam/hyper-unicorn-gamejam-final-chapter" target="_blank">Hyper Unicorn Game Jam</a>.
+                    This project taught me many new things that I previously didn't know and helped me better understand how other games did certain things, such as 
+                    creating cool environments and making them work well with the type of game I'm making, among many other things.
                 </p>
-            
+            </div>
+
+            <div class="description-section">
                 <h2>Development Process</h2>
-                <p>I first heard of the Hyper Unicorn Game Jam through some friends who were going to participate, but I was pretty busy around the time that the jam started,
-                    so I originally didn’t plan on participating. However, a few days later, I saw a few friends talk about it, and I thought to myself that it wouldn’t hurt to try
+                <p>
+                    I first heard of the Hyper Unicorn Game Jam through some friends who were going to participate, but I was pretty busy around the time that the jam started,
+                    so I originally didn't plan on participating. However, a few days later, I saw a few friends talk about it, and I thought to myself that it wouldn't hurt to try
                     and make a game for this jam. So I made a quick prototype, and I started to see some potential in it.
                 </p>
-                <p>I first began by taking what I learned from making movement for other projects like my <a href="UKPage.html">Ultrakill Vertical Slice</a>
+                <p>
+                    I first began by taking what I learned from making movement for other projects like my <a href="UKPage.html">Ultrakill Vertical Slice</a>
                     and <a href="URSPage.html" target="_blank">Unnamed Retro Shooter</a> projects and creating a simple but fun movement system for the game.
                 </p>
-                <video width="800px" height="460px" controls="controls">
-                    <source src="img/GZMovement.mp4" type="video/mp4" />
-                </video>
-                <p>After that, I began designing the enemies and levels. I experimented a lot with baked lighting for the first time to really make the environments pop a little
-                    bit more and to make it more performant than placing tons of real-time lights in the scene. There’s still a lot I could learn about level design, but I think
+                
+                <div class="media-container">
+                    <video width="800px" height="460px" controls="controls">
+                        <source src="img/GZMovement.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                
+                <p>
+                    After that, I began designing the enemies and levels. I experimented a lot with baked lighting for the first time to really make the environments pop a little
+                    bit more and to make it more performant than placing tons of real-time lights in the scene. There's still a lot I could learn about level design, but I think
                     that the levels I made all look pretty good!
                 </p>
-                <img src="img/GZscreenshot2.png" alt="Ground Zero Image 1">
-                <img src="img/GZEnvSS2.png" alt="Ground Zero Image 2">
-                <img src="img/GZEnvSS3.png" alt="Ground Zero Image 3">
-                <p>The game was almost done, but I really felt like it needed a pause menu, so I began making exactly that. It was quite a challenge to understand, as I
-                    had never made a pause menu before but I managed to make a decent one that doesn’t really pause the game itself but does let you tweak the
+                
+                <div class="media-container">
+                    <img src="img/GZscreenshot2.png" alt="Ground Zero Environment 1">
+                </div>
+                
+                <div class="media-container">
+                    <img src="img/GZEnvSS2.png" alt="Ground Zero Environment 2">
+                </div>
+                
+                <div class="media-container">
+                    <img src="img/GZEnvSS3.png" alt="Ground Zero Environment 3">
+                </div>
+                
+                <p>
+                    The game was almost done, but I really felt like it needed a pause menu, so I began making exactly that. It was quite a challenge to understand, as I
+                    had never made a pause menu before but I managed to make a decent one that doesn't really pause the game itself but does let you tweak the
                     volume of the music and change the mouse sensitivity, which were all things playtesters suggested. And those values are saved across the whole game.
                 </p>
-                <img src="img/GZMenu.png" alt="Menu Image">
+                
+                <div class="media-container">
+                    <img src="img/GZMenu.png" alt="Ground Zero Menu">
+                </div>
+            </div>
+
+            <div class="description-section">
                 <h2>Unity Events</h2>
-                <p>This was the first project where I really started to use Unity events a lot. I had previously heard of Unity events but never really looked into them more,
+                <p>
+                    This was the first project where I really started to use Unity events a lot. I had previously heard of Unity events but never really looked into them more,
                     but when I did, a whole new world opened for me. This project especially proved to me why Unity events were so useful, since I needed to quickly make
                     things work before the time of the game jam ran out. I used Unity events to easily activate certain things and make certain sequences work.
                 </p>
-                <p>I ❤ Unity Events</p>
-                <img src="img/unityevent1.png" alt="">
-                <img src="img/unityevent2.png" alt="">
-                <p>For example, the ending scene of the game used a script that let me quickly add new things to a sequence and activate them to create a cool ending to the game.
+                <p><strong>I ❤ Unity Events</strong></p>
+                
+                <div class="media-container">
+                    <img src="img/unityevent1.png" alt="Unity Events Example 1">
+                </div>
+                
+                <div class="media-container">
+                    <img src="img/unityevent2.png" alt="Unity Events Example 2">
+                </div>
+                
+                <p>
+                    For example, the ending scene of the game used a script that let me quickly add new things to a sequence and activate them to create a cool ending to the game.
                 </p>
-                <img src="img/GZUnityEventsSequence.png" alt="">
+                
+                <div class="media-container">
+                    <img src="img/GZUnityEventsSequence.png" alt="Unity Events Sequence">
+                </div>
+                
                 <p>Speaking of the ending... it would be a shame not to show off what I personally think is one of the coolest things I've ever made in game development so far.</p>
-                <video width="800px" height="460px" controls="controls">
-                    <source src="img/GZendscene.mp4" type="video/mp4" />
-                </video>
-                <h2>Outcome</h2>
-                <p>Even though the "final" game is nowhere near perfect, I still think I can be very proud of it. I learned so many new things from making this game
-                    that I can use to create even better new games, and I don’t think I’m done just yet with this game, as I would like to eventually apply the feedback I've
-                    received from people playing this game to make it better!
-                </p>
-                <p>Also, it won FIRST PLACE in the Hyper Unicorn Game Jam!!! Which I’m super happy with :)</p>
-                <img src="img/GZfinalresults.png" alt="">
+                
+                <div class="media-container">
+                    <video width="800px" height="460px" controls="controls">
+                        <source src="img/GZendscene.mp4" type="video/mp4" />
+                    </video>
+                </div>
             </div>
 
+            <div class="description-section">
+                <h2>Outcome</h2>
+                <p>
+                    Even though the "final" game is nowhere near perfect, I still think I can be very proud of it. I learned so many new things from making this game
+                    that I can use to create even better new games, and I don't think I'm done just yet with this game, as I would like to eventually apply the feedback I've
+                    received from people playing this game to make it better!
+                </p>
+                <p><strong>Also, it won FIRST PLACE in the Hyper Unicorn Game Jam!!! Which I'm super happy with :)</strong></p>
+                
+                <div class="media-container">
+                    <img src="img/GZfinalresults.png" alt="Ground Zero Final Results">
+                </div>
+            </div>
+            
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://joons.itch.io/ground-z3r0" class="cta-button">Download</a>
+                <a href="https://joons.itch.io/ground-z3r0" class="cta-button" target="_blank">
+                    <i class="fab fa-itch-io"></i> Play on Itch.io
+                </a>
             </div>
         </div>
     </main>

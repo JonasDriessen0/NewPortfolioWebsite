@@ -27,38 +27,49 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">EvilPunk</h1>
-            <p class="project-subtitle">A Top Down 2.5D Wave Shooter</p>
+            <!-- Enhanced Header Section -->
+            <div class="project-header evil-punk">
+                <h1 class="project-title">EvilPunk</h1>
+                <p class="project-subtitle">A Top Down 2.5D Wave Shooter</p>
+            </div>
 
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/EvilpunkSS1.png" alt="evilpunk screenshot 1">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/EvilpunkSS1.png" alt="evilpunk screenshot 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/EvilpunkSS2.png" alt="evilpunk screenshot 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/EvilpunkSS3.png" alt="evilpunk screenshot 3">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/EvilpunkSS2.png" alt="evilpunk screenshot 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/EvilpunkSS3.png" alt="evilpunk screenshot 3">
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="project-video">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/P1NZpGpna9E" title="EvilPunk Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="project-video">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/P1NZpGpna9E" title="EvilPunk Gameplay Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-description">
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>Introduction to the Project</h2>
-                <p>EvilPunk was a group project in which four game artists and I made a game for a school project. There were originally meant to be two developers, but my teammate who was assigned to our group didn’t want to pursue this study anymore and left right at the start, making me the only developer. As this was only the second game I had ever made, I struggled quite a lot with this project.</p>
-            
+                <p>EvilPunk was a group project in which four game artists and I made a game for a school project. There were originally meant to be two developers, but my teammate who was assigned to our group didn't want to pursue this study anymore and left right at the start, making me the only developer. As this was only the second game I had ever made, I struggled quite a lot with this project.</p>
+            </div>
+
+            <div class="description-section">
                 <h2>Gameplay</h2>
                 <p>EvilPunk is a top-down 2.5D shooter where players use different guns to battle increasing waves of enemies which become progressively harder.</p>
-            
+            </div>
+
+            <div class="description-section">
                 <h2>Enemy Types</h2>
                 <div class="item-grid">
                     <div class="item-card">
@@ -77,9 +88,10 @@
                         <p>A fast enemy with low HP that explodes when it gets close enough to you.</p>
                     </div>
                 </div>
-            
                 <p class="disclaimer">Enemy art by Felishaus <a href="https://www.artstation.com/felishaus" target="_blank" class="cta-button">Visit their ArtStation</a></p>
-            
+            </div>
+
+            <div class="description-section">
                 <h2>Guns</h2>
                 <div class="item-grid">
                     <div class="item-card">
@@ -103,19 +115,32 @@
                         <p>A weapon that shoots a ball of energy, dealing massive damage.</p>
                     </div>
                 </div>
-            
                 <p class="disclaimer">Weapon art by Nou Maaijen. <a href="https://www.artstation.com/nou_drx" target="_blank" class="cta-button">Visit their ArtStation</a></p>
-            
-                <h2>Gun Selector Functionality</h2>
-                <p>The Gun Selector allows players to switch between weapons during gameplay. This feature is essential as it lets players utilize the various guns in the game.</p>
-                <img src="img/Weaponselectorinspector.png" alt="Gun Selector Inspector" class="visual-sheet-img">
-                <img src="img/codescreennew.png" alt="Code Screenshot" class="code-snippet-img">
-                <h2>Outcome</h2>
-                <p>Despite being a solo developer on the project, I am proud of the final result and the experience gained throughout its development. I plan to revisit this game sometime again and give it a full makeover transforming it in a full compelete game</p>
             </div>
 
+            <div class="description-section">
+                <h2>Gun Selector Functionality</h2>
+                <p>The Gun Selector allows players to switch between weapons during gameplay. This feature is essential as it lets players utilize the various guns in the game.</p>
+                
+                <div class="media-container">
+                    <img src="img/Weaponselectorinspector.png" alt="Gun Selector Inspector">
+                </div>
+                
+                <div class="media-container">
+                    <img src="img/codescreennew.png" alt="Code Screenshot">
+                </div>
+            </div>
+
+            <div class="description-section">
+                <h2>Outcome</h2>
+                <p>Despite being a solo developer on the project, I am proud of the final result and the experience gained throughout its development. I plan to revisit this game sometime again and give it a full makeover transforming it in a full complete game.</p>
+            </div>
+
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://github.com/JonasDriessen0/M4SpaceGame" class="cta-button">View on GitHub</a>
+                <a href="https://github.com/JonasDriessen0/M4SpaceGame" class="cta-button" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
             </div>
         </div>
     </main>

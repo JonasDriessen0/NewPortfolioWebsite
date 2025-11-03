@@ -27,58 +27,82 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">Unnamed Retro Shooter</h1>
-            <p class="project-subtitle">A prototype for a retro inspired fast-paced shooter</p>
-
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/URSss1.png" alt="Hollow Reverie Image 1">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/URSss2.png" alt="Hollow Reverie Image 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/URSss3.png" alt="Hollow Reverie Image 3">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-
+            <!-- Enhanced Header Section -->
+            <div class="project-header retro-shooter">
+                <h1 class="project-title">Unnamed Retro Shooter</h1>
+                <p class="project-subtitle">A prototype for a retro inspired fast-paced shooter</p>
             </div>
 
-            <div class="project-description">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/URSss1.png" alt="Unnamed Retro Shooter Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/URSss2.png" alt="Unnamed Retro Shooter Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/URSss3.png" alt="Unnamed Retro Shooter Image 3">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>Introduction to the project</h2>
                 <p>I made this project since I wanted to experiment more with the mechanics of our Ultrakill vertical slice project but I thought it was best to make a separate project that uses my own movement and shooting scripts from the ultrakill project. This project is currently still in its early prototyping stage but I've got a lot in store for the future of this project.</p>
+            </div>
 
-                <h2>Dash orbs</h2>
+            <div class="description-section">
+                <h2>Dash Orbs</h2>
                 <p>This is one of the new additions I added to this game, the dash orb.</p>
                 
-                <img src="img/dashorb.png" alt="Dash Orb" class="project-image">
+                <div class="media-container">
+                    <img src="img/dashorb.png" alt="Dash Orb">
+                </div>
 
-                <p>When looking at the dashorb it targets it with a target indicator</p>
+                <p>When looking at the dashorb it targets it with a target indicator.</p>
                 
-                <img src="img/Unity_GVdA4NCWrj.gif" alt="Dash Orb Targeting" class="project-image">
+                <div class="media-container">
+                    <img src="img/Unity_GVdA4NCWrj.gif" alt="Dash Orb Targeting">
+                </div>
 
-                <p>The way it is able to target something is it first does a spherecast and if an object with the correct tag is in that spherecast then it activates the target indicator</p>
+                <p>The way it is able to target something is it first does a spherecast and if an object with the correct tag is in that spherecast then it activates the target indicator.</p>
 
-                <img src="img/imageMORECODE.png" alt="Dash Orb Code" class="code-image">
+                <div class="media-container">
+                    <img src="img/imageMORECODE.png" alt="Dash Orb Code">
+                </div>
 
                 <p>But they are called dash orbs for a reason...</p>
 
-                <img src="img/Unity_D49IQITLfy.gif" alt="Dash Orb Usage" class="project-image">
+                <div class="media-container">
+                    <img src="img/Unity_D49IQITLfy.gif" alt="Dash Orb Usage">
+                </div>
 
-                <p>When the player presses "E" the player dashes towards the orb and these can be chained together to go pretty fast</p>
+                <p>When the player presses "E" the player dashes towards the orb and these can be chained together to go pretty fast.</p>
 
-                <img src="img/Unity_Y5T2QFbGOD.gif" alt="Chaining Dash Orbs" class="project-image">
-
-                <p>I am excited to see what this game will form once it's further into development.</p>
+                <div class="media-container">
+                    <img src="img/Unity_Y5T2QFbGOD.gif" alt="Chaining Dash Orbs">
+                </div>
             </div>
 
+            <div class="description-section">
+                <h2>Future Development</h2>
+                <p>I am excited to see what this game will form once it's further into development. The dash orb mechanic opens up many possibilities for level design and combat scenarios that I'm eager to explore.</p>
+            </div>
+
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://github.com/JonasDriessen0/MegaMurder" class="cta-button">View on GitHub</a>
+                <a href="https://github.com/JonasDriessen0/MegaMurder" class="cta-button" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
             </div>
         </div>
     </main>

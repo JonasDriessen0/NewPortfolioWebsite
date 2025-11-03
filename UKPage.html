@@ -27,38 +27,49 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">Ultrakill Vertical Slice</h1>
-            <p class="project-subtitle">Vertical slice project aiming to recreate gameplay of the fast paced shooter Ultrakill</p>
+            <!-- Enhanced Header Section -->
+            <div class="project-header ultrakill">
+                <h1 class="project-title">Ultrakill Vertical Slice</h1>
+                <p class="project-subtitle">Vertical slice project aiming to recreate gameplay of the fast paced shooter Ultrakill</p>
+            </div>
 
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/ukscreenshot3.png" alt="Hollow Reverie Image 1">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/ukscreenshot3.png" alt="Ultrakill Screenshot 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ukscreenshot2.png" alt="Ultrakill Screenshot 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ukscreenshot4.png" alt="Ultrakill Screenshot 4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ukscreenshot1.png" alt="Ultrakill Screenshot 3">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/ukscreenshot2.png" alt="Hollow Reverie Image 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ukscreenshot1.png" alt="Hollow Reverie Image 3">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/ukscreenshot4.png" alt="Hollow Reverie Image 4">
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/1MDwcHW_XxY" frameborder="0" allowfullscreen></iframe>
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/1MDwcHW_XxY" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-description">
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>About the Project</h2>
-                <p>This was a group vertical slice project we developed for school. We had approximately 3 months to create a vertical slice of the first part of the first level in the game we chose: Ultrakill. The group consisted of 4 developers and 3 game artists, with us being in control of who did which parts.</p>
-            
+                <p>
+                    This was a group vertical slice project we developed for school. We had approximately 3 months to create a vertical slice of the first part of the first level in the game we chose: Ultrakill. The group consisted of 4 developers and 3 game artists, with us being in control of who did which parts.
+                </p>
+            </div>
+
+            <div class="description-section">
                 <h2>My Contribution</h2>
                 <p>I contributed to several key aspects of the project:</p>
                 <ul>
@@ -69,37 +80,70 @@
                     <li>Designing and implementing the start sequence of the level</li>
                 </ul>
                 <p>We managed to successfully finish our project within the deadline, although it was pretty close since this was quite a complex project.</p>
-            
+            </div>
+
+            <div class="description-section">
                 <h2>What is Ultrakill?</h2>
-                <p>Ultrakill is a very fast-paced movement shooter in which you traverse through various linear levels. I personally really like the game and had played it a bit before starting this project. Since I was tasked with creating the movement and shooting functionality, I really wanted to capture that fast-paced action that Ultrakill manages to deliver so well.</p>
-            
+                <p>
+                    Ultrakill is a very fast-paced movement shooter in which you traverse through various linear levels. I personally really like the game and had played it a bit before starting this project. Since I was tasked with creating the movement and shooting functionality, I really wanted to capture that fast-paced action that Ultrakill manages to deliver so well.
+                </p>
+            </div>
+
+            <div class="description-section">
                 <h2>Movement System</h2>
                 <p>The movement system includes WASD movement, jumping, and a complex dash ability. Here are some key components:</p>
-                <p>WASD movement implementation</p>
-                <img src="img/ukwasd.png" alt="WASD movement code">
                 
-                <p>Checking if the player is grounded</p>
-                <img src="img/ukgrounded.png" alt="Grounded check code">
+                <p><strong>WASD movement implementation</strong></p>
+                <div class="media-container">
+                    <img src="img/ukwasd.png" alt="WASD Movement Code">
+                </div>
                 
-                <p>Applying gravity to the player</p>
-                <img src="img/ukgrav.png" alt="Gravity code">
+                <p><strong>Checking if the player is grounded</strong></p>
+                <div class="media-container">
+                    <img src="img/ukgrounded.png" alt="Grounded Check Code">
+                </div>
                 
-                <p>Jumping implementation</p>
-                <img src="img/ukjump.png" alt="Jump code">
-            
+                <p><strong>Applying gravity to the player</strong></p>
+                <div class="media-container">
+                    <img src="img/ukgrav.png" alt="Gravity Code">
+                </div>
+                
+                <p><strong>Jumping implementation</strong></p>
+                <div class="media-container">
+                    <img src="img/ukjump.png" alt="Jump Code">
+                </div>
+            </div>
+
+            <div class="description-section">
                 <h2>Dash Ability</h2>
                 <p>The dash ability was one of the most challenging parts of the movement system to implement. Here's a visual explanation of how it works:</p>
-                <img src="img/UltrakillVisualSheet.png" alt="Ultrakill Dash Ability Visual Sheet" class="visual-sheet-img">
+                
+                <div class="media-container">
+                    <img src="img/UltrakillVisualSheet.png" alt="Ultrakill Dash Ability Visual Sheet">
+                </div>
+                
                 <p>And here's the actual code implementation of the dash sequence:</p>
-                <img src="img/ukcode.png" alt="Ultrakill dash code" class="code-snippet-img">
-            
+                
+                <div class="media-container">
+                    <img src="img/ukcode.png" alt="Ultrakill Dash Code">
+                </div>
+            </div>
+
+            <div class="description-section">
                 <h2>Outcome</h2>
-                <p>I am extremely pleased with how this project turned out, and I am really proud of my work on this project. We successfully recreated the fast-paced, intense gameplay of Ultrakill within our vertical slice, capturing the essence of the original game.</p>
+                <p>
+                    I am extremely pleased with how this project turned out, and I am really proud of my work on this project. We successfully recreated the fast-paced, intense gameplay of Ultrakill within our vertical slice, capturing the essence of the original game.
+                </p>
             </div>
             
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://github.com/SSeinaru/M6virticalSliceUltraKill" class="cta-button" target="_blank">View on GitHub</a>
-                <a href="https://github.com/SSeinaru/M6virticalSliceUltraKill/releases/tag/bugfix" class="cta-button" target="_blank">Download</a>
+                <a href="https://github.com/SSeinaru/M6virticalSliceUltraKill" class="cta-button" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://github.com/SSeinaru/M6virticalSliceUltraKill/releases/tag/bugfix" class="cta-button" target="_blank">
+                    <i class="fas fa-download"></i> Download
+                </a>
             </div>
         </div>
     </main>

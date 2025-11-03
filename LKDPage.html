@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title</title>
+    <title>Linked</title>
     <link rel="icon" type="image/x-icon" href="img/JDiconSmall.png">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -27,71 +27,99 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">Project Title</h1>
-            <p class="project-subtitle">Project subtitle or short description</p>
+            <!-- Enhanced Header Section -->
+            <div class="project-header linked">
+                <h1 class="project-title">Linked</h1>
+                <p class="project-subtitle">A short platformer game jam game</p>
+            </div>
 
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/placeholder1.png" alt="Project Image 1">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/LinkedSS.png" alt="Linked Screenshot 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/LinkedSS2.png" alt="Linked Screenshot 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/LinkedSS3.png" alt="Linked Screenshot 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/LinkedCover.png" alt="Linked Cover">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/placeholder2.png" alt="Project Image 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/placeholder3.png" alt="Project Image 3">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/placeholder4.png" alt="Project Image 4">
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-description">
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>About the Project</h2>
-                <p>This section should include a general description of the project, its purpose, and any relevant context. Explain what the project is about, the problem it solves, or the concept behind it.</p>
-            
-                <h2>My Contribution</h2>
-                <p>Describe your role and contributions to the project:</p>
-                <ul>
-                    <li>Key responsibility 1</li>
-                    <li>Key responsibility 2</li>
-                    <li>Key responsibility 3</li>
-                    <li>Key responsibility 4</li>
-                </ul>
+                <p>
+                    This project was made within a week for the Goeware Limited Color palette game jam. I went into this jam knowing that I 
+                    wanted to make a simple but fluid third person platformer game because I've always wanted to make one of those games
+                    and I thought that this was going to be the perfect opportunity for it. I also deliberately chose a simplistic white and blue color 
+                    palette since we only had 8 colors to pick from in this jam and I thought that white and blue work nicely together, and turns out they do!
+                </p>
                 
-                <h2>Technical Details</h2>
-                <p>Explain the technical aspects of the project, such as:</p>
-                <p>Description of a technical feature or system</p>
-                <img src="img/code-screenshot.png" alt="Code screenshot">
+                <div class="media-container">
+                    <img src="img/LinkedOverseerSS.png" alt="Linked Overseer Screenshot">
+                </div>
+            </div>
+
+            <div class="description-section">
+                <h2>Player Controller</h2>
+                <p>
+                    I wanted to create a player controller that was easy to understand but also a bit challenging at the same time so I could add a little bit of 
+                    challenge to the game. The movement system focuses on momentum and precision, requiring players to carefully plan their jumps and movements
+                    through the interconnected platforms.
+                </p>
                 
-                <p>Additional technical explanation</p>
-                <img src="img/another-screenshot.png" alt="Another technical screenshot">
-                
-                <h2>Challenges & Solutions</h2>
-                <p>Describe any significant challenges you faced during the project and how you overcame them.</p>
-                <img src="img/challenge-solution.png" alt="Challenge solution visual">
-                
-                <h2>Visual Elements</h2>
-                <p>If relevant, include information about the visual design, UI/UX considerations, or artistic direction.</p>
-                <img src="img/visual-element.png" alt="Visual design element">
-                
+                <div class="media-container">
+                    <video width="800px" height="460px" controls="controls">
+                        <source src="img/LKDmovement.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="description-section">
+                <h2>Game Design & Mechanics</h2>
+                <p>
+                    The core mechanic revolves around the connection between different platforms and the player's ability to navigate them smoothly.
+                    Each level was designed to test different aspects of the movement system, from basic jumping to more complex maneuvers that combine
+                    multiple movement techniques.
+                </p>
+            </div>
+
+            <div class="description-section">
                 <h2>Outcome</h2>
-                <p>Summarize the results of the project, what you learned, and any accomplishments or recognition received.</p>
+                <p>
+                    The game was successfully completed within the jam timeframe and received positive feedback for its clean visual design and tight controls.
+                    This project helped me better understand the importance of player feedback in platformer games and how subtle design choices can greatly
+                    impact the overall game feel. The limited color palette constraint proved to be more of a creative catalyst than a limitation.
+                </p>
             </div>
             
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://github.com/username/project-repo" class="cta-button" target="_blank">View on GitHub</a>
-                <a href="https://project-demo-link.com" class="cta-button" target="_blank">Live Demo</a>
-                <a href="https://download-link.com" class="cta-button">Download</a>
+                <a href="https://github.com/username/project-repo" class="cta-button" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://joons.itch.io/linked" class="cta-button" target="_blank">
+                    <i class="fab fa-itch-io"></i> Play on Itch.io
+                </a>
+                <a href="https://download-link.com" class="cta-button">
+                    <i class="fas fa-download"></i> Download
+                </a>
             </div>
         </div>
     </main>

@@ -27,77 +27,141 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">Hollow Reverie</h1>
-            <p class="project-subtitle">A Short Linear Horror Game</p>
+            <!-- Enhanced Header Section -->
+            <div class="project-header hollow-reverie">
+                <h1 class="project-title">Hollow Reverie</h1>
+                <p class="project-subtitle">A Short Linear Horror Game</p>
+            </div>
 
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/hrscreenshot1.png" alt="Hollow Reverie Image 1">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/hrscreenshot1.png" alt="Hollow Reverie Screenshot 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/hrscreenshot2.png" alt="Hollow Reverie Screenshot 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/hrscreenshot3.png" alt="Hollow Reverie Screenshot 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/hrscreenshot4.png" alt="Hollow Reverie Screenshot 4">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/hrscreenshot2.png" alt="Hollow Reverie Image 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/hrscreenshot3.png" alt="Hollow Reverie Image 3">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/hrscreenshot4.png" alt="Hollow Reverie Image 4">
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/U8R4RZ8AAEU" frameborder="0" allowfullscreen></iframe>
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/U8R4RZ8AAEU" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-description">
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>About the Project</h2>
-                <p>Hollow Reverie is a short linear horror game made for the <a href="https://itch.io/jam/goedware-game-jam-zero-ui" target="_blank">Goedware Zero UI Game Jam</a>.
+                <p>
+                    Hollow Reverie is a short linear horror game made for the <a href="https://itch.io/jam/goedware-game-jam-zero-ui" target="_blank">Goedware Zero UI Game Jam</a>.
                     It takes place in an abandoned warehouse where you have a tablet that displays useful information and features a sonar and a flash ability to help you along
                     your way. You are also being hunted by an unknown creature that has no sight but has excellent hearing, so you need to be careful and quiet in an attempt
-                    to survive. I learned a lot of new Unity skills throughout this project, and I also learned a lot of game design skills while designing the levels.</p>
-            
+                    to survive. I learned a lot of new Unity skills throughout this project, and I also learned a lot of game design skills while designing the levels.
+                </p>
+            </div>
+
+            <div class="description-section">
                 <h2>The Monster</h2>
-                <p>I thought I'd get right into what the most challenging part of this project was: <b>The Monster</b>.</p>
-                <img src="img/hrmonster.png" alt="the monster">
-                <p>The monster has the appearance of a smoke cloud. I chose this because I didn't think that I would have been able to make a scary fully animated monster in
+                <p>I thought I'd get right into what the most challenging part of this project was: <strong>The Monster</strong>.</p>
+                
+                <div class="media-container">
+                    <img src="img/hrmonster.png" alt="The Monster">
+                </div>
+                
+                <p>
+                    The monster has the appearance of a smoke cloud. I chose this because I didn't think that I would have been able to make a scary fully animated monster in
                     the limited timeframe before the game jam submissions would end. So, I chose this as the player can't fully figure out what it is, and the most prominent
-                    fear any human has is the fear of the unknown, so I think it works pretty well!</p>
+                    fear any human has is the fear of the unknown, so I think it works pretty well!
+                </p>
                 <p>It also definitely helps that the monster makes a terrifying noise when you're near it. See for yourself:</p>
-                <video width="800px" height="460px" controls="controls">
-                    <source src="img/hrvideo.mp4" type="video/mp4" />
-                </video>
+                
+                <div class="media-container">
+                    <video width="800px" height="460px" controls="controls">
+                        <source src="img/hrvideo.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="description-section">
                 <h2>Monster Behavior</h2>
-                <p>To start off, the main way in which the monster behaves is down to either one of these states: Wandering or Hunting.</p>
-                <img src="img/hrcode1.png" alt="state code">
+                <p>The main way in which the monster behaves is down to either one of these states: Wandering or Hunting.</p>
+                
+                <div class="media-container">
+                    <img src="img/hrcode1.png" alt="Monster State Code">
+                </div>
+                
                 <p>Let's start off with how the wandering state works.</p>
-                <p>The wandering state is pretty simple. Every 5 seconds (time determined by the wanderTimer variable), it picks a random spot on the navmesh within the
-                    wanderRadius and then goes to it.</p>
-                <img src="img/hrcode2.png" alt="wandering code">
-                <img src="img/hrcode3.png" alt="wandering code">
+                <p>
+                    The wandering state is pretty simple. Every 5 seconds (time determined by the wanderTimer variable), it picks a random spot on the navmesh within the
+                    wanderRadius and then goes to it.
+                </p>
+                
+                <div class="media-container">
+                    <img src="img/hrcode2.png" alt="Wandering Code 1">
+                </div>
+                
+                <div class="media-container">
+                    <img src="img/hrcode3.png" alt="Wandering Code 2">
+                </div>
+                
                 <p>Let's get into how the monster switches from wandering to hunting.</p>
-                <p>As I mentioned before, the monster is blind, so it reacts purely to sound. To achieve that, I first find all AudioSource elements in the scene,
+                <p>
+                    As I mentioned before, the monster is blind, so it reacts purely to sound. To achieve that, I first find all AudioSource elements in the scene,
                     then determine the loudest and closest sound within range. Finally, the monster starts heading towards the previously determined AudioSource and adjusts
-                    its speed based on the AudioSource's volume and distance from the monster.</p>
-                <img src="img/hrcode4.png" alt="sound detection code">
-                <p>The Hunting state is activated in the <b>DetectSounds</b> function, and when activated, the <b>Hunt</b> function ensures that the monster switches
-                    back to wandering when it finishes hunting.</p>
-                <img src="img/hrcode5.png" alt="hunt code">
+                    its speed based on the AudioSource's volume and distance from the monster.
+                </p>
+                
+                <div class="media-container">
+                    <img src="img/hrcode4.png" alt="Sound Detection Code">
+                </div>
+                
+                <p>
+                    The Hunting state is activated in the <strong>DetectSounds</strong> function, and when activated, the <strong>Hunt</strong> function ensures that the monster switches
+                    back to wandering when it finishes hunting.
+                </p>
+                
+                <div class="media-container">
+                    <img src="img/hrcode5.png" alt="Hunt Code">
+                </div>
+            </div>
+
+            <div class="description-section">
                 <h2>Outcome</h2>
-                <p>Making Hollow Reverie taught me a bunch of new useful skills in Unity, game design, and coding. I'm very pleased with the end result,
-                    and if you were wondering where I ranked among other games in the game jam, here are my results!</p>
-                <img src="img/hrresults.png" alt="jam results">
-                <p>I'm very proud of how highly rated my game was—9th place out of a total of 70 games in visuals and audio is super cool!</p>
+                <p>
+                    Making Hollow Reverie taught me a bunch of new useful skills in Unity, game design, and coding. I'm very pleased with the end result,
+                    and if you were wondering where I ranked among other games in the game jam, here are my results!
+                </p>
+                
+                <div class="media-container">
+                    <img src="img/hrresults.png" alt="Game Jam Results">
+                </div>
+                
+                <p>I'm very proud of how highly rated my game was, 9th place out of a total of 70 games in visuals and audio is super cool!</p>
             </div>
             
-
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://joons.itch.io/hollow-reverie" class="cta-button">Download</a>
+                <a href="https://joons.itch.io/hollow-reverie" class="cta-button" target="_blank">
+                    <i class="fab fa-itch-io"></i> Play on Itch.io
+                </a>
+                <a href="https://github.com/username/hollow-reverie" class="cta-button" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://download-link.com" class="cta-button">
+                    <i class="fas fa-download"></i> Download
+                </a>
             </div>
         </div>
     </main>

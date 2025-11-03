@@ -51,6 +51,7 @@ nav {
     background-color: rgba(140, 140, 142, 0.1);
 }
 
+/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -70,6 +71,13 @@ nav {
     align-items: center;
     justify-content: center;
     height: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-text {
+    text-align: center;
 }
 
 .hero-background {
@@ -110,6 +118,22 @@ nav {
     color: #8c8c8e;
 }
 
+.hero-content .hero-description {
+    font-size: 18px;
+    color: #b8b8ba;
+    margin: 20px auto 40px;
+    max-width: 600px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* CTA Button */
 .cta-button {
     display: inline-block;
@@ -124,6 +148,31 @@ nav {
 }
 
 .cta-button:hover {
+    background-color: #8c8c8e;
+    color: #0f0f11;
+    transform: translateY(-3px);
+}
+
+.cta-button.primary {
+    background-color: #8c8c8e;
+    color: #0f0f11;
+    border: 1px solid #8c8c8e;
+}
+
+.cta-button.primary:hover {
+    background-color: #fff;
+    color: #0f0f11;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #8c8c8e;
+    border: 1px solid #8c8c8e;
+}
+
+.cta-button.secondary:hover {
     background-color: #8c8c8e;
     color: #0f0f11;
     transform: translateY(-3px);
@@ -256,6 +305,91 @@ nav {
     color: #fff;
 }
 
+/* Featured Projects */
+.featured-projects {
+    margin-bottom: 60px;
+}
+
+.featured-label,
+.section-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.featured-label span,
+.section-label span {
+    background: #0f0f11;
+    color: #8c8c8e;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.featured-label::before,
+.section-label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #8c8c8e, transparent);
+    z-index: 0;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.project-card.featured {
+    position: relative;
+    background: linear-gradient(135deg, #1a1a1d, #242428);
+    border: 1px solid #3a3a3e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.project-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #8c8c8e, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card.featured:hover::before {
+    opacity: 1;
+}
+
+.project-card.featured:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: #8c8c8e;
+}
+
+/* All Projects Section */
+.all-projects {
+    margin-top: 60px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -270,8 +404,8 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #8c8c8e;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a2d;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -281,7 +415,8 @@ nav {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: #3a3a3e;
 }
 
 .project-card img {
@@ -334,6 +469,19 @@ nav {
     background: #fff;
 }
 
+/* Winner tag styling */
+.tag.winner {
+    background: linear-gradient(135deg, #ffd700, #ffed4a);
+    color: #0f0f11;
+    font-weight: 700;
+    animation: winnerGlow 2s infinite alternate;
+}
+
+@keyframes winnerGlow {
+    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); }
+    100% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.6); }
+}
+
 /* Styles for disabled project card */
 .project-card.disabled {
     position: relative;
@@ -381,18 +529,6 @@ nav {
     max-width: 80%;
 }
 
-/* Responsive design for project grid */
-@media (max-width: 1024px) {
-    .project-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-}
 /* Footer */
 footer {
     background-color: #0f0f11;
@@ -426,6 +562,16 @@ footer .container {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (max-width: 1024px) {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -450,6 +596,20 @@ footer .container {
     .hero-content .subtitle {
         font-size: 24px;
     }
+    
+    .hero-content .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .cta-button {
+        width: 100%;
+        max-width: 280px;
+    }
 
     .cta-button {
         padding: 10px 20px;
@@ -466,6 +626,15 @@ footer .container {
 
     .project-card p {
         font-size: 14px;
+    }
+    
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     footer .container {
@@ -486,8 +655,16 @@ footer .container {
     .hero-content .subtitle {
         font-size: 18px;
     }
+    
+    .hero-content .hero-description {
+        font-size: 14px;
+    }
 
     .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-grid {
         grid-template-columns: 1fr;
     }
 

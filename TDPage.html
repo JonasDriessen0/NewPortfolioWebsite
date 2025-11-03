@@ -27,69 +27,114 @@
 
     <main class="project-page">
         <div class="container">
-            <h1 class="project-title">Generic Tower Defense</h1>
-            <p class="project-subtitle">A simple tower defense game</p>
+            <!-- Enhanced Header Section -->
+            <div class="project-header tower-defense">
+                <h1 class="project-title">Generic Tower Defense</h1>
+                <p class="project-subtitle">A simple tower defense game</p>
+            </div>
 
-            <div class="gallery-and-video">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/TDCover.png" alt="Hollow Reverie Image 1">
+            <!-- Gallery and Video Container -->
+            <div class="gallery-video-container">
+                <div class="gallery-and-video">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/TDCover.png" alt="Tower Defense Cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/TDss1.png" alt="Tower Defense Screenshot 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/TDss2.png" alt="Tower Defense Screenshot 2">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/TDss1.png" alt="Hollow Reverie Image 2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/TDss2.png" alt="Hollow Reverie Image 3">
-                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
 
-                <div class="project-video">
-                    <iframe src="https://www.youtube.com/embed/oEJiPv1KhL0" frameborder="0" allowfullscreen></iframe>
+                    <div class="project-video">
+                        <iframe src="https://www.youtube.com/embed/oEJiPv1KhL0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-description">
+            <!-- Project Description Sections -->
+            <div class="description-section">
                 <h2>Introduction to the Project</h2>
-                <p>Generic Tower Defense is a project that I made for a school assignment to create a tower defense game. GenericTD focuses on having a clean and simple art style while still being fun and enjoyable to play. I learned a lot during the development of this project, not only about how to write better code but also how to use Git more efficiently.</p>
-            
+                <p>
+                    Generic Tower Defense is a project that I made for a school assignment to create a tower defense game. GenericTD focuses on having a clean and simple art style while still being fun and enjoyable to play. I learned a lot during the development of this project, not only about how to write better code but also how to use Git more efficiently.
+                </p>
+            </div>
+
+            <div class="description-section">
                 <h2>Gameplay</h2>
-                <p>The gameplay consists of stopping ever-increasing waves of enemies from reaching your "Base." You can defend against the incoming enemies by buying and placing turrets along the path to your base.</p>
-            
+                <p>
+                    The gameplay consists of stopping ever-increasing waves of enemies from reaching your "Base." You can defend against the incoming enemies by buying and placing turrets along the path to your base.
+                </p>
+            </div>
+
+            <div class="description-section">
                 <h2>Buying Turrets</h2>
                 <p>You can buy turrets with a currency you earn from killing enemies, which is called "Metal".</p>
-                <img src="img/TDvisualsheet.png" alt="tower defense visual sheet" class="project-image">
+                
+                <div class="media-container">
+                    <img src="img/TDvisualsheet.png" alt="Tower Defense Visual Sheet">
+                </div>
+                
                 <p>There are currently 2 different turrets you can buy.</p>
-            
+            </div>
+
+            <div class="description-section">
                 <h2>Turret Placing</h2>
-                <p>When you buy a turret, you enter placing mode, where a placement icon follows your mouse location along a grid. When you click, you place the turret on the grid at the location where you clicked.</p>
-                <img src="img/Unity_nlw5cgkwex.gif" alt="turret placing gif" class="project-image">
+                <p>
+                    When you buy a turret, you enter placing mode, where a placement icon follows your mouse location along a grid. When you click, you place the turret on the grid at the location where you clicked.
+                </p>
+                
+                <div class="media-container">
+                    <img src="img/Unity_nlw5cgkwex.gif" alt="Turret Placing Animation">
+                </div>
+                
                 <p>Set the variable "mousePosition" as the position of the mouse.</p>
-                <img src="img/movetomouse.png" alt="mouse code" class="project-image">
+                
+                <div class="media-container">
+                    <img src="img/movetomouse.png" alt="Mouse Position Code">
+                </div>
+                
                 <p>Move the placement indicator along the grid smoothly with the help of the DotTween extension.</p>
-                <img src="img/movealonggrid.png" alt="grid code" class="project-image">
+                
+                <div class="media-container">
+                    <img src="img/movealonggrid.png" alt="Grid Movement Code">
+                </div>
+                
                 <p>Place the turret when you click the left mouse button.</p>
-                <img src="img/placeturret.png" alt="place turret" class="project-image">
+                
+                <div class="media-container">
+                    <img src="img/placeturret.png" alt="Place Turret Code">
+                </div>
+            </div>
+
+            <div class="description-section">
                 <h2>Outcome</h2>
-                <p>While developing this project, I learned a lot of new skills both inside and outside of Unity, and I am very pleased with the end result.</p>
+                <p>
+                    While developing this project, I learned a lot of new skills both inside and outside of Unity, and I am very pleased with the end result.
+                </p>
             </div>
             
-
+            <!-- Project Links -->
             <div class="project-links">
-                <a href="https://github.com/JonasDriessen0/TowerDefenseJonas/tree/develop" class="cta-button" target="_blank">View on GitHub</a>
-                <a href="https://github.com/JonasDriessen0/TowerDefenseJonas/releases/tag/0.0.2" class="cta-button" target="_blank">Download</a>
+                <a href="https://github.com/JonasDriessen0/TowerDefenseJonas/tree/develop" class="cta-button" target="_blank">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a href="https://github.com/JonasDriessen0/TowerDefenseJonas/releases/tag/0.0.2" class="cta-button" target="_blank">
+                    <i class="fas fa-download"></i> Download
+                </a>
             </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <div class="location">
-                AMST, NETHERLANDS - <span id="current-time"></span>
-            </div>
+            <div class="location">AMST, NETHERLANDS - <span id="current-time"></span></div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/jonas-driessen-457907294/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/JonasDriessen0" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
